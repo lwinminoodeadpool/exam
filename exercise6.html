@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<script type="text/javascript">
+		function calculate(){
+			//dom
+			var firstnumber= parseInt (document.myform.firstnumber.value);
+			var secondnumber= parseInt(document.myform.secondnumber.value);
+			console.log(firstnumber,secondnumber);
+			var sum=firstnumber+secondnumber;
+			var sub=firstnumber-secondnumber;
+			var mul=firstnumber*secondnumber;
+			var div=firstnumber/secondnumber;
+			var mod=firstnumber%secondnumber;
+			console.log(sum);
+			document.myform.sum.value=sum;
+			document.myform.sub.value=sub;
+			document.myform.mul.value=mul;
+			document.myform.div.value=div.toFixed(2);
+			document.myform.mod.value=mod;
+
+		}
+	</script>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<form name="myform">
+		First Number:
+		<input type="number" name="firstnumber"><br><br>
+		Second Number:
+		<input type="number" name="secondnumber"><br><br>
+		<input type="button" value="Calculate" onclick="calculate()">
+		<br><br>
+		Sum:
+		<input type="number" name="sum"><br><br>
+		Sub:
+		<input type="number" name="sub"><br><br>
+		Mul
+		<input type="number" name="mul"><br><br>
+		Div
+		<input type="number" name="div"><br><br>
+		Mod
+		<input type="number" name="mod">
+		
+	</form>
+</body>
+</html>

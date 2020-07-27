@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <script type="text/javascript">
+
+function Sum(){
+
+                var first_number=parseInt(document.myform.first_number.value);
+                var second_number=parseInt(document.myform.second_number.value);
+                var sum=first_number+second_number;
+                document.myform.sum.value=sum;
+
+
+}
+        
+
+    </script>
+</head>
+<body>
+    <form name="myform">
+	
+        First Number:
+        <input type="Number" name="first_number"><br><br>
+
+        Second Number:
+        <input type="Number" name="second_number"><br><br>
+        <input type="button" name="" value="Calculate" onclick="Sum()"> <br>
+        The result is <input type="Number" name="sum"><br>
+    </form>
+</body>
+</html>
